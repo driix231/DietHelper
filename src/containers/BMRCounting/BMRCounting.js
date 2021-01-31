@@ -8,9 +8,10 @@ import { bmrData, countingBMR } from "./BMRCountingData";
 
 const BMRCounting = observer(() => {
 
+    //Formularz BMR liczenia i diety na tydzien
+
     const [bmrItems, setBmrItems] = useState(bmrData);
 
-    // console.log(countingBMR(90, 184, 22, "Mężczyzna", "Aktywny", "Utrzymać wagę"));
     const handleSubmit = (data) => {
         const results = countingBMR(data.weight, data.height, data.age, data.sex, data.activity, data.plan);
         calculatorBMR.resultBMR = Math.round(results);

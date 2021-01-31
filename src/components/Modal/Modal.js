@@ -19,6 +19,7 @@ const ModalComponent = ({ hideModal, show, header, footerComp, children}) => {
                 <Button onClick={() => hideModal()}>Zamknij</Button>
             </ModalFooter>
         </ModalMain>
+        
     )
 }
 

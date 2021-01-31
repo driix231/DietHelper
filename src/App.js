@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components'
 import theme from "./utility/theme/theme";
-import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout/MainLayout';
 import { navigation } from './utility/Routing/SidebarNav';
 

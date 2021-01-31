@@ -13,38 +13,38 @@ const TableForProducts = observer(({ arr, written }) => {
 
     return (
         <NewDiv>
-        <Table responsive striped bordered hover size="sm">
-            <thead>
-            <tr className="table-warning">
-                    <th>Produkt</th>
-                    <th>Kalorie</th>
-                    <th>Białko</th>
-                    <th>Węglowodany</th>
-                    <th>Tłuszcz</th>
-                    {written ? <>
-                        <th>Gramy</th>
-                    </>
-                        :
-                        null}
-                </tr>
-            </thead>
-            <Tbody>
-                {arr.map((item) =>
-                    <tr onClick={() => products.addActualProduct(item)}>
-                        <td>{item.name}</td>
-                        <td>{item.kcal}</td>
-                        <td>{item.proteins}</td>
-                        <td>{item.carbs}</td>
-                        <td>{item.fats}</td>
+            <Table responsive striped bordered hover size="sm">
+                <thead>
+                    <tr className="table-warning">
+                        <th>Produkt</th>
+                        <th>Kalorie</th>
+                        <th>Białko</th>
+                        <th>Węglowodany</th>
+                        <th>Tłuszcz</th>
                         {written ? <>
-                            <td>{item.eaten}</td>
-                            <td><Button onClick={() => deleteProduct(item.id)}>Usuń</Button></td>
+                            <th>Gramy</th>
                         </>
-                            : null}
+                            :
+                            null}
                     </tr>
-                )}
-            </Tbody>
-        </Table>
+                </thead>
+                <Tbody>
+                    {arr.map((item) =>
+                        <tr onClick={() => products.addActualProduct(item)}>
+                            <td>{item.name}</td>
+                            <td>{item.kcal}</td>
+                            <td>{item.proteins}</td>
+                            <td>{item.carbs}</td>
+                            <td>{item.fats}</td>
+                            {written ? <>
+                                <td>{item.eaten}</td>
+                                <td><Button onClick={() => deleteProduct(item.id)}>Usuń</Button></td>
+                            </>
+                                : null}
+                        </tr>
+                    )}
+                </Tbody>
+            </Table>
         </NewDiv>
     )
 });

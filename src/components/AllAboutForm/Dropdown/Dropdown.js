@@ -2,6 +2,8 @@ import React from 'react';
 import { useFormContext } from 'react-hook-form'
 import { ItemDropdownContainer, FormControl, Pragraph } from "./Dropdown.css";
 
+//UNIWERSALNY DROPDOWN KTORY PRZYJMUJE PARAMETRY W POSTACI OBIEKTU DO WYSWIETLANIA I WYBIERANIA DANYVCH
+
 export default function Dropdown({ Component = ItemDropdownContainer, options, name, label, ...rest }) {
     const { register } = useFormContext()
     return (

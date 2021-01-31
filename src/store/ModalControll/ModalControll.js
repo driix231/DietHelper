@@ -1,7 +1,9 @@
-import { makeAutoObservable, observable } from "mobx";
+import { makeAutoObservable } from "mobx";
 
 
 class ModalControll {
+
+    //akcje dotyczace modal
 
     isOpenModalName = "";
 

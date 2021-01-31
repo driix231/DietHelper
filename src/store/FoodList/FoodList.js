@@ -4,6 +4,8 @@ import { foodData } from "../../components/Header/HeaderData";
 
 class FoodListStore {
 
+    //zmienne
+
     foodsData = foodData
     clickedProduct = [];
     countedProduct = {};
@@ -18,7 +20,7 @@ class FoodListStore {
         makeAutoObservable(this);
     }
 
-    countingProduct() {
+    countingProduct() { //sluzy do liczenia produktow zeby po dodaniu sie zapisywaly
         this.kcal = 0;
         this.proteins = 0;
         this.carbs = 0;
@@ -42,21 +44,21 @@ class FoodListStore {
         this.countedProduct = obj;
     }
 
-    updateProduct(arr) {
+    updateProduct(arr) { // 
         this.clickedProduct = arr;
         this.countingProduct();
     }
 
-    addProduct(item) {
+    addProduct(item) { // dodaje produkt do listy zeby potem wyswietlic
         this.clickedProduct.push(item);
         this.countingProduct();
     }
 
-    addActualProduct(obj) {
+    addActualProduct(obj) { //dodaje aktualnie wybrany produkt
         this.actualProduct = obj;
     }
 
-    filterEl(e) {
+    filterEl(e) { //Slizy do filtrowania produktow w modalu
         let newList = [];
         let currList = [];
         if (e.target.value !== "") {

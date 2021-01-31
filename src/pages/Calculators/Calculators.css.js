@@ -32,13 +32,23 @@ export const CalculatorContainer = styled.div`
 `
 
 export const SingleFormDiv = styled.div`
-    width: 40%;
-    margin: 50px 20px;
+    width: 90%;
+    margin: 50px 220px;
     border: 1px solid;
+    text-align:center;
+    height:60vh;
     padding: 30px;
     border-radius: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,212,255,0.08837209302325577) 100%);
     @media screen and (max-width: 768px) {
         width:100%;
         margin-bottom:30px;
-          }
+        height:100%;
+    }
+    @media screen and (max-width: 1024px) {
+        margin: 50px 50px;
+        width:100%;
+        margin-bottom:30px;
+        height:100%;
+    }
 `

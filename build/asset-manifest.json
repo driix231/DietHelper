@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.33d642ce.chunk.js",
-    "main.js.map": "/static/js/main.33d642ce.chunk.js.map",
+    "main.js": "/static/js/main.68dcd153.chunk.js",
+    "main.js.map": "/static/js/main.68dcd153.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.e16db764.chunk.js": "/static/js/2.e16db764.chunk.js",
-    "static/js/2.e16db764.chunk.js.map": "/static/js/2.e16db764.chunk.js.map",
+    "static/css/2.69233f45.chunk.css": "/static/css/2.69233f45.chunk.css",
+    "static/js/2.f799bda6.chunk.js": "/static/js/2.f799bda6.chunk.js",
+    "static/js/2.f799bda6.chunk.js.map": "/static/js/2.f799bda6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.83c7d825a652f148eae8d3e31ab93299.js": "/precache-manifest.83c7d825a652f148eae8d3e31ab93299.js",
+    "precache-manifest.cb3761fc5222c124055a40ae7d88d1b2.js": "/precache-manifest.cb3761fc5222c124055a40ae7d88d1b2.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/js/2.e16db764.chunk.js.LICENSE.txt": "/static/js/2.e16db764.chunk.js.LICENSE.txt",
+    "static/css/2.69233f45.chunk.css.map": "/static/css/2.69233f45.chunk.css.map",
+    "static/js/2.f799bda6.chunk.js.LICENSE.txt": "/static/js/2.f799bda6.chunk.js.LICENSE.txt",
     "static/media/photo1.jpg": "/static/media/photo1.72cc7b4a.jpg",
     "static/media/photo2.jpg": "/static/media/photo2.894bc965.jpg",
     "static/media/photo3.jpg": "/static/media/photo3.4846edbe.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c8a21426.js",
-    "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.e16db764.chunk.js",
-    "static/js/main.33d642ce.chunk.js"
+    "static/css/2.69233f45.chunk.css",
+    "static/js/2.f799bda6.chunk.js",
+    "static/js/main.68dcd153.chunk.js"
   ]
 }

@@ -24,7 +24,7 @@ const CountingKcalComp = observer(() => {
                         <th>Gramy</th>
                     </tr>
                 </thead>
-                <tbody>
+                <Tbody>
                     <tr>
                         <td>{products.kcal}</td>
                         <td>{products.proteins}</td>
@@ -32,7 +32,7 @@ const CountingKcalComp = observer(() => {
                         <td>{products.fats}</td>
                         <td>{products.eaten}</td>
                     </tr>
-                </tbody>
+                </Tbody>
             </Table>
             </DivTable>
         </CountingKcalContainer>

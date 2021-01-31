@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { HomeContainer, Btn, H1Text, H2Text, DivSingleContainer, Img, InsideDivSingleContainer } from "./Home.css";
 import { HomeData } from "./HomeData";
 
+//Pobieranie aplikacji i strona glowa
+
 const Home = () => {
     return (
         <HomeContainer>

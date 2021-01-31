@@ -2,6 +2,8 @@ import React from 'react'
 import { useFormContext } from 'react-hook-form'
 import { Label, InputComp, InputContainer, ErrorDiv } from "./Input.css";
 
+//UNIWERSALNY INPUT
+
 const Input = ({ label, name, type = "text", required, validation, value, placeholder }) => {
     const { register, errors } = useFormContext();
 

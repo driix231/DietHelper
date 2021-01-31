@@ -16,6 +16,10 @@ import photo from "../../assets/images/photo4.jpg";
 const AddMeal = observer(() => {
 
     const onSubmit = (data) => {
+        /*
+            Wysyłanie danych produktu przechwytywanie aktualnego produktu wybranego w modalu
+            oraz liczenie rezultatow
+        */
         modalControll.hideModal();
         const choosedProduct = { ...products.actualProduct };
         const convertValues = currentlyValuesOfFood(choosedProduct, data.eaten);
@@ -48,6 +52,12 @@ const AddMeal = observer(() => {
         </FooterMainContainer>
     )
 
+
+    /* 
+        Caly ten komponent sluzy do wyswietlania rezultatow wybranych produktow, sluzy do odpalania modala i wpisywania
+        produktow
+    */
+
     return (
         <AddMealMainContainer>
             <ImageContainer>
@@ -60,7 +70,8 @@ const AddMeal = observer(() => {
                 header="Wprowadz posiłek"
                 footerComp={footerModal}
             >
-                <input type="text" onChange={(e) => products.filterEl(e)} />
+                Wyszukaj
+                <input type="text"onChange={(e) => products.filterEl(e)} /> {/* Ta funkcja do filtrowania i szukania produktow w modlu */}
                 <TableForProducts arr={products.foodsData} />
             </ModalComponent>
             <DivText>
@@ -70,12 +81,12 @@ const AddMeal = observer(() => {
                 <>
                     <div>
 
-                    <TableForProducts arr={products.clickedProduct} written />
+                        <TableForProducts arr={products.clickedProduct} written />
                     </div>
                     <div>
                         <CountingKcalComp />
                     </div>
-                    
+
                 </>
                 :
                 null

@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { Button, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import ModalComponent from "../../components/Modal/Modal";
 import { calculatorBMR } from "../../store/CalculatorBMR/CalculatorBMR";
 import { modalControll } from "../../store/ModalControll/ModalControll";
@@ -9,6 +9,8 @@ import { diets } from "./ResultDescriptionData";
 import { BsCalendar } from "react-icons/bs";
 
 const ResultsDescription = observer(() => {
+
+    //Wyswietlanie jadlospisu
 
     const conditionDisplaying = (dietFor) => calculatorBMR.resultBMR > dietFor.minKcal && calculatorBMR.resultBMR < dietFor.maxKcal
 
